@@ -3,23 +3,1907 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>立赫精密｜AXEQUATOR PRECISION LTD — 半導體設備維修與工程服務</title>
+  <meta name="description" content="立赫精密 (AXEQUATOR PRECISION LTD) 提供半導體設備維修、零組件更換與鋼瓶更換作業支援，配合客戶廠區規範，重視安全、品質與施工紀錄。">
+  <meta name="keywords" content="立赫精密, AXEQUATOR, 半導體設備維修, 零件更換, 鋼瓶更換, 廠務工程, 台中后里">
+  <meta name="author" content="AXEQUATOR PRECISION LTD">
 
-  <meta
-    name="description"
-    content="立赫精密有限公司 AXEQUATOR PRECISION LTD 公司與產品介紹"
-  >
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://citriclin0422.github.io/company-product/">
+  <meta property="og:title" content="立赫精密｜AXEQUATOR PRECISION LTD — 半導體設備維修與工程服務">
+  <meta property="og:description" content="專業半導體設備維修與現場工程支援，遵循廠區安全規範，落實標準作業流程與品質回報。">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://citriclin0422.github.io/company-product/">
 
-  <title>立赫精密｜AXEQUATOR PRECISION LTD</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230b1f33'/><circle cx='50' cy='50' r='38' fill='none' stroke='%23f59e0b' stroke-width='4'/><path d='M30 50h40M50 30v40M38 38l24 24M38 62l24-24' stroke='%2338bdf8' stroke-width='3'/><circle cx='50' cy='50' r='7' fill='%23f59e0b'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS Variables & Design Tokens
+       ========================================================================== */
+    :root {
+      --bg-main: #07121E;
+      --bg-surface: #0B1F33;
+      --bg-card: rgba(15, 31, 51, 0.75);
+      --bg-card-hover: rgba(22, 45, 74, 0.85);
+      --bg-glass: rgba(11, 31, 51, 0.8);
+      
+      --text-main: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      
+      --accent-blue: #38BDF8;
+      --tech-blue: #1677B8;
+      --safety-orange: #F59E0B;
+      --safety-orange-hover: #D97706;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(56, 189, 248, 0.3);
+      --border-orange: rgba(245, 158, 11, 0.4);
+      
+      --font-sans: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-en: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+      
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.35);
+      --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.15);
+      --shadow-orange-glow: 0 0 25px rgba(245, 158, 11, 0.2);
+
+      --max-width: 1200px;
+      --transition-base: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ==========================================================================
+       Reset & Base Styles
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(22, 119, 184, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
+        linear-gradient(to bottom, #07121E 0%, #0B1F33 50%, #07121E 100%);
+      background-attachment: fixed;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-base);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* ==========================================================================
+       Layout & Container
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    /* Grid overlay pattern */
+    .grid-bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       Typography Utilities
+       ========================================================================== */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-full);
+      color: var(--accent-blue);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-tag.orange {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: var(--border-orange);
+      color: var(--safety-orange);
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title span {
+      background: linear-gradient(135deg, #FFFFFF 40%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin-bottom: 48px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ==========================================================================
+       Header & Navigation
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(7, 18, 30, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name-zh {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .brand-name-en {
+      font-family: var(--font-en);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #FFFFFF;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-blue);
+      transition: var(--transition-base);
+      border-radius: 2px;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: var(--transition-base);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--safety-orange), var(--safety-orange-hover));
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--accent-blue);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+    }
+
+    /* Mobile Hamburger */
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .mobile-toggle span {
+      width: 20px;
+      height: 2px;
+      background: #FFFFFF;
+      transition: var(--transition-base);
+      margin: 2.5px 0;
+    }
+
+    /* ==========================================================================
+       Hero Section
+       ========================================================================== */
+    .hero-section {
+      padding: 110px 0 90px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid var(--border-accent);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero-eyebrow .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #10B981;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    .hero-title .highlight {
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #FFFFFF 30%, var(--accent-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+    }
+
+    .hero-title .sub-highlight {
+      color: var(--accent-blue);
+    }
+
+    .hero-desc {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 36px;
+      max-width: 720px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 54px;
+    }
+
+    .hero-badges {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .hero-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-badge-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-sm);
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .hero-badge-text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .hero-badge-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       About Section
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-content p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .value-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      backdrop-filter: blur(10px);
+      transition: var(--transition-base);
+    }
+
+    .value-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-3px);
+    }
+
+    .value-card .value-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .value-card .value-title svg {
+      color: var(--safety-orange);
+    }
+
+    .value-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .company-meta-box {
+      background: linear-gradient(135deg, rgba(15, 31, 51, 0.9), rgba(7, 18, 30, 0.95));
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-subtle);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .company-meta-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .company-meta-header {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .company-meta-header h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .company-meta-header p {
+      font-family: var(--font-en);
+      font-size: 0.85rem;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .company-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .meta-item .meta-label {
+      color: var(--text-muted);
+      min-width: 80px;
+      font-weight: 500;
+    }
+
+    .meta-item .meta-value {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       Services Section
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: var(--transition-base);
+      backdrop-filter: blur(10px);
+    }
+
+    .service-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .service-icon-wrap {
+      width: 58px;
+      height: 58px;
+      border-radius: var(--radius-md);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-blue);
+      margin-bottom: 24px;
+    }
+
+    .service-card.highlight-orange .service-icon-wrap {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: var(--border-orange);
+      color: var(--safety-orange);
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    .service-card p.service-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .service-points {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .service-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .service-point svg {
+      color: #10B981;
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ==========================================================================
+       Process Section (Timeline)
+       ========================================================================== */
+    .process-timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      position: relative;
+    }
+
+    .process-step {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px 18px;
+      position: relative;
+      transition: var(--transition-base);
+    }
+
+    .process-step:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+    }
+
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-blue);
+      font-family: var(--font-en);
+      font-weight: 800;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Safety & Quality Section
+       ========================================================================== */
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .safety-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      text-align: left;
+      transition: var(--transition-base);
+    }
+
+    .safety-card:hover {
+      border-color: var(--border-orange);
+      background: var(--bg-card-hover);
+    }
+
+    .safety-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid var(--border-orange);
+      color: var(--safety-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .safety-card h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .safety-card p {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       Scenarios Section
+       ========================================================================== */
+    .scenarios-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .scenario-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      text-align: center;
+      transition: var(--transition-base);
+    }
+
+    .scenario-item:hover {
+      border-color: var(--border-accent);
+      background: rgba(56, 189, 248, 0.05);
+    }
+
+    .scenario-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+
+    .scenario-item h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+    }
+
+    .scenario-item p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Contact Section
+       ========================================================================== */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .contact-card-main {
+      background: linear-gradient(135deg, rgba(15, 31, 51, 0.95), rgba(7, 18, 30, 0.98));
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .contact-person-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid var(--border-orange);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      margin-bottom: 24px;
+    }
+
+    .contact-person-badge .title {
+      color: var(--safety-orange);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .contact-person-badge .name {
+      color: #FFFFFF;
+      font-size: 1.05rem;
+      font-weight: 800;
+    }
+
+    .contact-person-badge .name-en {
+      font-family: var(--font-en);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .contact-details-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: var(--transition-base);
+    }
+
+    .contact-row:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .contact-info-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .contact-row-icon {
+      color: var(--accent-blue);
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .contact-info-label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .contact-info-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    .copy-btn {
+      padding: 6px 12px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-sm);
+      color: var(--accent-blue);
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-base);
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-blue);
+      color: var(--bg-main);
+    }
+
+    .contact-form-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      background: rgba(7, 18, 30, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: #FFFFFF;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: var(--transition-base);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    .footer {
+      background: #040C14;
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-top: 14px;
+      max-width: 380px;
+    }
+
+    .footer-links h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-blue);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0B1F33;
+      border: 1px solid var(--accent-blue);
+      color: #FFFFFF;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-subtle), 0 0 15px rgba(56, 189, 248, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      z-index: 2000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-timeline {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .safety-grid, .scenarios-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-grid, .contact-container {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 60px 0;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: rgba(7, 18, 30, 0.98);
+        backdrop-filter: blur(16px);
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid var(--border-subtle);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-menu.open {
+        transform: translateY(0);
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .header-cta {
+        display: none;
+      }
+
+      .services-grid, .process-timeline, .safety-grid, .scenarios-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      
+      .copy-btn {
+        align-self: flex-end;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <header>
-    <h1>
-      立赫精密 公司介紹<br>
-      <span lang="en">AXEQUATOR PRECISION LTD — Company Introduction</span>
-    </h1>
 
-    <p>網站建置中，敬請期待。</p>
+  <!-- Background Cyber/Process Grid Overlay -->
+  <div class="grid-bg-overlay"></div>
+
+  <!-- Header / Sticky Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="立赫精密 AXEQUATOR 首頁">
+        <!-- Reconstructed SVG Logo based on circuit globe business card -->
+        <svg class="brand-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="#0B1F33" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+          <!-- Circuit Globe Lines -->
+          <path d="M18 40C26 30 38 24 50 24C65 24 78 32 84 44" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M14 52C18 64 30 76 50 76C68 76 80 64 86 52" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M22 62C30 70 40 72 52 70C66 68 76 58 80 48" stroke="#1677B8" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 34C32 20 54 20 70 32" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Circuit nodes / dots -->
+          <circle cx="18" cy="40" r="4.5" fill="#F59E0B"/>
+          <circle cx="84" cy="44" r="4.5" fill="#F59E0B"/>
+          <circle cx="50" cy="76" r="4.5" fill="#38BDF8"/>
+          <circle cx="34" cy="50" r="4" fill="#38BDF8"/>
+          <circle cx="66" cy="42" r="4" fill="#1677B8"/>
+          <circle cx="48" cy="38" r="4" fill="#F59E0B"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name-zh">立赫精密</span>
+          <span class="brand-name-en">AXEQUATOR PRECISION</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Menu Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">首頁</a>
+        <a href="#about" class="nav-link">關於立赫</a>
+        <a href="#services" class="nav-link">服務項目</a>
+        <a href="#process" class="nav-link">作業流程</a>
+        <a href="#safety" class="nav-link">專業與安全</a>
+        <a href="#contact" class="nav-link">聯絡我們</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          服務洽詢
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="切換選單">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
+
+  <main>
+    <!-- 5.2 Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="pulse-dot"></span>
+            半導體設備服務與現場工程支援團隊
+          </div>
+
+          <h1 class="hero-title">
+            <span class="highlight">半導體設備維修</span>
+            與現場工程服務
+          </h1>
+
+          <p class="hero-desc">
+            立赫精密提供半導體設備維修、零組件更換與鋼瓶更換作業支援。嚴格配合客戶廠區規範，高度重視安全守則、施工作業品質與完整工程交接紀錄。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              查看服務項目
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              立即聯絡立赫
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <div class="hero-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="hero-badge-text">
+                <h4>安全優先執行</h4>
+                <p>遵循 SOP 與廠區許可</p>
+              </div>
+            </div>
+
+            <div class="hero-badge-item">
+              <div class="hero-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div class="hero-badge-text">
+                <h4>確實維護復原</h4>
+                <p>料號與作業雙重確認</p>
+              </div>
+            </div>
+
+            <div class="hero-badge-item">
+              <div class="hero-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="hero-badge-text">
+                <h4>完整工程紀錄</h4>
+                <p>清晰透明的交接回報</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.3 About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="section-tag">ABOUT US</div>
+            <h2 class="section-title">服務半導體產業的<br><span>設備維修與工程支援團隊</span></h2>
+            <p>
+              <strong>立赫精密 (AXEQUATOR PRECISION LTD)</strong> 專注於半導體設備維護與現場工程作業。我們理解半導體製造與廠務運作對高穩定性、零瑕疵與嚴格安全規範的要求。
+            </p>
+            <p>
+              團隊秉持「安全優先、作業確實、溝通清楚、按規範執行」的理念，配合客戶廠區工作許可機制，協助降低設備停機風險並維持產線平穩運行。
+            </p>
+
+            <div class="values-grid">
+              <div class="value-card">
+                <div class="value-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                  專業 (Professional)
+                </div>
+                <p>理解半導體廠區作業流程與設備服務需求</p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  安全 (Safety)
+                </div>
+                <p>落實客戶廠區 SOP、工作許可與 PPE 規範</p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  精準 (Precision)
+                </div>
+                <p>重視零件核對、安裝精度與完工回報</p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  協作 (Collaboration)
+                </div>
+                <p>緊密配合設備、廠務、環安衛及承攬窗口</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Meta Card -->
+          <div class="company-meta-box">
+            <div class="company-meta-header">
+              <h3>立赫精密有限公司</h3>
+              <p>AXEQUATOR PRECISION LTD</p>
+            </div>
+            <div class="company-meta-list">
+              <div class="meta-item">
+                <span class="meta-label">統一編號</span>
+                <span class="meta-value">60765834</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">主要窗口</span>
+                <span class="meta-value">邱炘然 Lorenzo Chiu (特助)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">營運據點</span>
+                <span class="meta-value">台中市后里區三豐路四段129巷48號2樓</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">服務範圍</span>
+                <span class="meta-value">半導體設備維修保養、零件更換、鋼瓶更換現場支援</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">合作模式</span>
+                <span class="meta-value">依專案需求確認範圍、時程、條件與交付紀錄</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.4 Services Section -->
+    <section id="services" style="background: rgba(11, 31, 51, 0.4);">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">CORE SERVICES</div>
+          <h2 class="section-title">核心服務<span>項目</span></h2>
+          <p class="section-subtitle mx-auto">
+            專注於半導體現場工程之三大核心業務，以標準化流程與嚴謹安全態度執行各項任務。
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>半導體設備維修</h3>
+            <p class="service-desc">配合廠區排程與工程師指示，提供設備異常故障排除支援與定期保養服務。</p>
+            <div class="service-points">
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>設備異常檢查與維修支援</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>預防保養及定期檢查支援</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>維修前後狀態確認與作業紀錄</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>零組件檢查與更換</h3>
+            <p class="service-desc">確實落實零組件規格比對與拆裝，確保機台更換後之各項功能與精度無虞。</p>
+            <div class="service-points">
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>耗材與零組件狀況確認</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>拆裝、更換與復原作業支援</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>料號、數量與安裝位置雙重核對</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>完工後功能確認與紀錄</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card highlight-orange">
+            <div class="service-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12"/><path d="M6 8h12"/><rect width="12" height="13" x="6" y="8" rx="2"/><path d="M12 3v5"/></svg>
+            </div>
+            <h3>鋼瓶更換作業支援</h3>
+            <p class="service-desc">依客戶廠區標準作業程序執行更換，落實工作許可與作業區域之安全防護。</p>
+            <div class="service-points">
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>作業前條件與工作許可確認</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>依客戶 SOP 執行更換及配合作業</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>作業區域、工具與人員狀態確認</span>
+              </div>
+              <div class="service-point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>完工交接及現場紀錄保留</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.5 Process Section -->
+    <section id="process">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">STANDARD WORKFLOW</div>
+          <h2 class="section-title">標準作業<span>流程</span></h2>
+          <p class="section-subtitle mx-auto">
+            五階段標準工程流程，確保每一次進廠作業皆具備明確依據、安全保障與完整交付。
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <span class="step-number">01</span>
+            <h4 class="step-title">需求確認</h4>
+            <p class="step-desc">確認機台型態、零件規格、作業位置及期望進場時程。</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">02</span>
+            <h4 class="step-title">現場及風險確認</h4>
+            <p class="step-desc">核對廠區規範、施工許可證、個人防護裝備 (PPE) 與現場條件。</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">03</span>
+            <h4 class="step-title">維修／更換執行</h4>
+            <p class="step-desc">依核准範圍及標準作業程序 (SOP) 進行嚴謹工程作業。</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">04</span>
+            <h4 class="step-title">功能及環境復原</h4>
+            <p class="step-desc">確認設備運行狀態、工具清點、料件復原與作業區 5S 清潔。</p>
+          </div>
+
+          <div class="process-step">
+            <span class="step-number">05</span>
+            <h4 class="step-title">完工回報</h4>
+            <p class="step-desc">提供詳細作業結果紀錄、異常事項回饋及後續維護建議。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.6 Safety & Quality Section -->
+    <section id="safety" style="background: rgba(11, 31, 51, 0.4);">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag orange">SAFETY & PRECISION</div>
+          <h2 class="section-title">專業與<span>安全原則</span></h2>
+          <p class="section-subtitle mx-auto">
+            遵循半導體廠區標準規範，將工安與品質落實於每一個作業細節。
+          </p>
+        </div>
+
+        <div class="safety-grid">
+          <div class="safety-card">
+            <div class="safety-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4>作業前確認</h4>
+            <p>施工前充分溝通工作內容、潛在風險評估及團隊人員職責分工。</p>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h4>規範化執行</h4>
+            <p>嚴格遵循客戶 SOP、安全工作許可制度及無塵室/廠區環境規定。</p>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h4>品質核對</h4>
+            <p>針對更換零組件型號、安裝位置及作業運轉結果執行雙重核對。</p>
+          </div>
+
+          <div class="safety-card">
+            <div class="safety-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h4>紀錄與交接</h4>
+            <p>保留完整施工日誌與測試數據，完工後清晰回報主管與承辦窗口。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.7 Scenarios Section -->
+    <section id="scenarios">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">APPLICATIONS</div>
+          <h2 class="section-title">服務場景與<span>合作對象</span></h2>
+          <p class="section-subtitle mx-auto">
+            專為高科技製造與半導體供應鏈提供專業工程支援。
+          </p>
+        </div>
+
+        <div class="scenarios-grid">
+          <div class="scenario-item">
+            <div class="scenario-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <h4>半導體製造廠</h4>
+            <p>晶圓製程設備日常保養與維修作業支援</p>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h4>封裝與測試廠</h4>
+            <p>後段封測機台零件更換與功能確認支援</p>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12"/><rect width="12" height="13" x="6" y="8" rx="2"/></svg>
+            </div>
+            <h4>廠務與氣體系統</h4>
+            <p>管路與鋼瓶更換作業之現場安全協作</p>
+          </div>
+
+          <div class="scenario-item">
+            <div class="scenario-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"/><path d="M18 8h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4"/><circle cx="8" cy="12" r="2"/></svg>
+            </div>
+            <h4>設備商與工程承攬</h4>
+            <p>原廠或工程承包商之在地人力與工程支援</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5.8 Contact Section -->
+    <section id="contact" style="background: rgba(11, 31, 51, 0.4);">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag orange">GET IN TOUCH</div>
+          <h2 class="section-title">聯絡<span>立赫精密</span></h2>
+          <p class="section-subtitle mx-auto">
+            若有半導體設備維修、零件更換或現場工程支援需求，歡迎透過電話、通訊軟體或 Email 與我們聯絡。
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Business Card Details -->
+          <div class="contact-card-main">
+            <div class="contact-person-badge">
+              <span class="title">特助 / Executive Assistant</span>
+              <span class="name">邱炘然</span>
+              <span class="name-en">Lorenzo Chiu</span>
+            </div>
+
+            <div class="contact-details-grid">
+              <!-- Mobile Phone -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                  <div>
+                    <div class="contact-info-label">行動電話 (Mobile)</div>
+                    <div class="contact-info-value"><a href="tel:0919912963" style="color:#FFF;">0919-912963</a> / +886-919-912963</div>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyText('0919912963', '行動電話')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  複製號碼
+                </button>
+              </div>
+
+              <!-- Company Phone -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <div>
+                    <div class="contact-info-label">公司電話 (Tel)</div>
+                    <div class="contact-info-value"><a href="tel:0425576888" style="color:#FFF;">04-25576888</a> / +886-4-25576888</div>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyText('0425576888', '公司電話')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  複製市話
+                </button>
+              </div>
+
+              <!-- Line / WeChat -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                  <div>
+                    <div class="contact-info-label">Line / WeChat ID</div>
+                    <div class="contact-info-value">AEP0520</div>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyText('AEP0520', '通訊軟體 ID')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  複製 ID
+                </button>
+              </div>
+
+              <!-- Company Email -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <div>
+                    <div class="contact-info-label">公司 Email</div>
+                    <div class="contact-info-value"><a href="mailto:Service@axequator.com" style="color:var(--accent-blue);">Service@axequator.com</a></div>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyText('Service@axequator.com', '公司 Email')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  複製 Email
+                </button>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <div class="contact-info-label">公司地址 (Address)</div>
+                    <div class="contact-info-value" style="font-size: 0.92rem;">
+                      台中市后里區三豐路四段129巷48號2樓<br>
+                      <span style="font-family: var(--font-en); font-size: 0.8rem; color: var(--text-muted);">2F., No.48, Ln. 129, Sec. 4, Sanfeng Rd., Houli Dist., Taichung City 421012, Taiwan</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyText('台中市后里區三豐路四段129巷48號2樓', '公司地址')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  複製地址
+                </button>
+              </div>
+
+              <!-- Tax ID & Service hours -->
+              <div class="contact-row">
+                <div class="contact-info-group">
+                  <svg class="contact-row-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <div>
+                    <div class="contact-info-label">營業時間與統一編號</div>
+                    <div class="contact-info-value" style="font-size:0.92rem;">週一至週五 08:30 - 17:30 (統編: 60765834)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Mailto Form Generator -->
+          <div class="contact-form-box">
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #FFF; margin-bottom: 8px;">快速發起專案洽詢</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px;">
+              填寫下方需求資訊，將為您自動生成標準格式 Email 寄送至 <span style="color:var(--accent-blue);">Service@axequator.com</span>。
+            </p>
+
+            <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="inqName">姓名 / 聯絡窗口 *</label>
+                <input type="text" id="inqName" class="form-input" placeholder="例如：王工程師" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inqCompany">公司 / 廠區單位名稱 *</label>
+                <input type="text" id="inqCompany" class="form-input" placeholder="例如：某半導體廠 設備部" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inqType">需求類型 *</label>
+                <select id="inqType" class="form-select">
+                  <option value="半導體設備維修與保養支援">半導體設備維修與保養支援</option>
+                  <option value="零組件檢查與更換作業">零組件檢查與更換作業</option>
+                  <option value="鋼瓶更換作業支援">鋼瓶更換作業支援</option>
+                  <option value="其他工程服務合作">其他工程服務合作</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="inqMsg">需求說明 / 作業時程</label>
+                <textarea id="inqMsg" class="form-textarea" placeholder="請簡要說明設備機型、預計作業時間或需配合之廠區事項..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                啟動 Email 寄送洽詢
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5.9 Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <svg class="brand-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:36px; height:36px;">
+              <circle cx="50" cy="50" r="46" fill="#0B1F33" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+              <path d="M18 40C26 30 38 24 50 24C65 24 78 32 84 44" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M14 52C18 64 30 76 50 76C68 76 80 64 86 52" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="18" cy="40" r="4.5" fill="#F59E0B"/>
+              <circle cx="84" cy="44" r="4.5" fill="#F59E0B"/>
+              <circle cx="50" cy="76" r="4.5" fill="#38BDF8"/>
+            </svg>
+            <div class="brand-text">
+              <span class="brand-name-zh" style="font-size:1.1rem;">立赫精密有限公司</span>
+              <span class="brand-name-en" style="font-size:0.6rem;">AXEQUATOR PRECISION LTD</span>
+            </div>
+          </div>
+          <p>
+            專注於半導體設備維護、耗材零件更換與鋼瓶更換作業現場支援，以專業、安全與精準為原則，落實各項工程規範。
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>網站導覽</h4>
+          <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於立赫</a></li>
+            <li><a href="#services">服務項目</a></li>
+            <li><a href="#process">作業流程</a></li>
+            <li><a href="#safety">專業與安全</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>聯絡資訊</h4>
+          <ul>
+            <li><a href="tel:0919912963">0919-912963 (邱特助)</a></li>
+            <li><a href="tel:0425576888">04-25576888 (市話)</a></li>
+            <li><a href="mailto:Service@axequator.com">Service@axequator.com</a></li>
+            <li style="color: var(--text-muted); font-size: 0.85rem;">Line: AEP0520</li>
+            <li style="color: var(--text-muted); font-size: 0.85rem;">統編: 60765834</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 AXEQUATOR PRECISION LTD (立赫精密有限公司). All rights reserved.
+        </div>
+        <div>
+          Hosting on GitHub Pages ｜ 精密工程 × 半導體工業服務
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMsg">已複製到剪貼簿</span>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Mobile navigation toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (mobileToggle && navMenu) {
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      // Close menu on link click
+      navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+    }
+
+    // Active navigation anchor on scroll
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const scrollPosition = window.pageYOffset + 120;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Copy to clipboard helper
+    function copyText(text, label) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(`已成功複製 ${label}：${text}`);
+        }).catch(() => {
+          fallbackCopy(text, label);
+        });
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(`已成功複製 ${label}：${text}`);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (toast && toastMsg) {
+        toastMsg.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3000);
+      }
+    }
+
+    // Form submission -> Generate Mailto
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('inqName').value.trim();
+      const company = document.getElementById('inqCompany').value.trim();
+      const type = document.getElementById('inqType').value;
+      const msg = document.getElementById('inqMsg').value.trim();
+
+      const subject = encodeURIComponent(`【業務洽詢】${company} - ${name} - ${type}`);
+      const body = encodeURIComponent(
+        `立赫精密 業務團隊您好：\n\n` +
+        `我是 ${company} 的 ${name}。\n` +
+        `需求類型：${type}\n\n` +
+        `需求內容與時程說明：\n${msg || '(未填寫額外說明)'}\n\n` +
+        `期待您的回覆，謝謝！`
+      );
+
+      window.location.href = `mailto:Service@axequator.com?subject=${subject}&body=${body}`;
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,316 @@
+project:
+  id: axequator-company-product
+  name_zh: 立赫精密公司產品網站
+  name_en: AXEQUATOR PRECISION LTD Company Website
+  repository: https://github.com/citriclin0422/company-product
+  production_url: https://citriclin0422.github.io/company-product/
+  site_type: b2b_single_page_corporate_site
+  status: specification_ready
+
+objectives:
+  primary: 讓半導體廠設備、廠務、採購及工程窗口快速理解服務並提出洽詢
+  secondary:
+    - 建立專業、安全、精準、可信賴的企業形象
+    - 清楚呈現設備維修、零組件更換與鋼瓶更換服務
+    - 為未來中英文網站及服務詳情頁保留擴充空間
+
+audiences:
+  - semiconductor_equipment_engineers
+  - facility_and_gas_system_staff
+  - environmental_health_and_safety_staff
+  - procurement_and_vendor_management
+  - engineering_contract_contacts
+
+business_scope:
+  confirmed:
+    - 半導體設備維修與保養支援
+    - 設備耗材及零組件檢查與更換
+    - 鋼瓶更換及現場作業支援
+    - 配合客戶廠區規範執行工程服務
+  forbidden_unverified_claims:
+    - 原廠授權
+    - 24小時服務
+    - 特定安全或品質認證
+    - 零事故紀錄
+    - 未確認的特殊氣體處理資格
+    - 未確認的設備品牌或機型能力
+    - 未取得授權的客戶名稱或Logo
+
+content:
+  language:
+    primary: zh-Hant
+    secondary: en
+    bilingual_mode_v1: headings_only
+  sections:
+    - id: home
+      component: Hero
+      nav_label: 首頁
+      heading: 半導體設備維修與現場工程服務
+      summary: 提供設備維修、零組件更換與鋼瓶更換作業支援，配合客戶廠區規範，重視安全、品質與施工紀錄。
+      ctas:
+        - label: 查看服務項目
+          target: services
+          style: primary
+        - label: 聯絡我們
+          target: contact
+          style: secondary
+
+    - id: about
+      component: About
+      nav_label: 關於立赫
+      content_points:
+        - 半導體產業設備維修與工程支援
+        - 安全優先、作業確實、溝通清楚
+        - 依需求確認範圍、時程、作業條件與交付紀錄
+
+    - id: services
+      component: Services
+      nav_label: 服務項目
+      items:
+        - id: equipment-maintenance
+          title: 半導體設備維修
+          points:
+            - 設備異常檢查與維修支援
+            - 預防保養及定期檢查支援
+            - 維修前後狀態確認與作業紀錄
+        - id: parts-replacement
+          title: 零組件檢查與更換
+          points:
+            - 耗材與零組件狀況確認
+            - 拆裝、更換與復原支援
+            - 料號、數量與安裝位置核對
+            - 完工後功能確認與紀錄
+        - id: cylinder-replacement
+          title: 鋼瓶更換作業支援
+          points:
+            - 作業前條件與工作許可確認
+            - 依客戶SOP執行更換及現場配合作業
+            - 作業區域、工具與人員狀態確認
+            - 完工交接及紀錄
+
+    - id: process
+      component: Process
+      nav_label: 作業流程
+      steps:
+        - order: 1
+          title: 需求確認
+          description: 確認設備、零件、作業位置與期望時程
+        - order: 2
+          title: 現場及風險確認
+          description: 確認廠區規範、工作許可、PPE與施工條件
+        - order: 3
+          title: 維修或更換執行
+          description: 依核准範圍及標準程序進行作業
+        - order: 4
+          title: 功能及環境復原
+          description: 確認設備狀態、工具、零件與作業區域
+        - order: 5
+          title: 完工回報
+          description: 提供作業結果、異常事項及後續建議
+
+    - id: safety
+      component: Safety
+      nav_label: 專業與安全
+      items:
+        - title: 作業前確認
+          description: 確認工作內容、風險與人員分工
+        - title: 規範化執行
+          description: 遵循客戶SOP、工作許可及廠區規定
+        - title: 品質核對
+          description: 核對零件、安裝位置及作業結果
+        - title: 紀錄與交接
+          description: 保留必要施工紀錄並清楚回報
+
+    - id: contact
+      component: Contact
+      nav_label: 聯絡我們
+      mode_v1: static_contact_with_mailto
+      fields_to_display:
+        - company_name
+        - contact_department
+        - telephone
+        - email
+        - address
+        - service_area
+        - business_hours
+      future_form_fields:
+        - name
+        - company
+        - email
+        - telephone
+        - inquiry_type
+        - message
+        - privacy_consent
+
+design:
+  thesis: 精密工程、半導體工業與安全可信賴
+  palette:
+    navy: '#0B1F33'
+    technology_blue: '#1677B8'
+    safety_orange: '#F59E0B'
+    cool_white: '#F5F8FA'
+    body_text: '#15202B'
+  typography:
+    zh: Noto Sans TC
+    en: Inter
+    body_min_px: 16
+  ui:
+    cards: subtle_border_small_radius_light_shadow
+    icons: lucide_line_icons
+    formal_icons_only: true
+    navigation: sticky_anchor_navigation
+    mobile_navigation: accessible_hamburger_menu
+  motion:
+    allowed: subtle_fade_and_translate
+    respect_prefers_reduced_motion: true
+  imagery:
+    preferred:
+      - authorized_company_photos
+      - authorized_equipment_maintenance_photos
+      - abstract_semiconductor_process_visuals
+    prohibited:
+      - unidentified_customer_facility_photos
+      - unauthorized_customer_logos
+      - unlicensed_stock_images
+
+technology:
+  framework: Vite
+  ui_library: React
+  language: JavaScript
+  styling: Tailwind CSS
+  icons: lucide-react
+  hosting: GitHub Pages
+  build_output: dist
+  package_manager: npm
+  vite_base: /company-product/
+  deployment: GitHub Actions
+  backend_v1: none
+  database_v1: none
+  contact_v1: mailto
+
+routes:
+  - path: /
+    type: single_page
+    sections:
+      - home
+      - about
+      - services
+      - process
+      - safety
+      - contact
+
+file_structure:
+  components:
+    - Navbar.jsx
+    - Hero.jsx
+    - About.jsx
+    - Services.jsx
+    - Process.jsx
+    - Safety.jsx
+    - Contact.jsx
+    - Footer.jsx
+  data:
+    - src/data/siteContent.js
+  deployment:
+    - .github/workflows/deploy.yml
+  config:
+    - vite.config.js
+    - package.json
+
+seo:
+  title: 立赫精密｜半導體設備維修與工程服務
+  description: 立赫精密提供半導體設備維修、零組件更換與鋼瓶更換作業支援，重視安全規範、作業品質與完工紀錄。
+  canonical: https://citriclin0422.github.io/company-product/
+  open_graph: required
+  favicon: required
+  organization_json_ld: after_contact_details_are_confirmed
+
+accessibility:
+  target: WCAG_AA
+  keyboard_navigation: required
+  visible_focus: required
+  semantic_html: required
+  meaningful_alt_text: required
+  no_horizontal_scroll_at_360px: required
+  text_zoom_200_percent: supported
+
+quality_gates:
+  - id: Q01
+    check: npm_install
+    expected: pass
+  - id: Q02
+    check: npm_run_lint
+    expected: pass
+  - id: Q03
+    check: npm_run_build
+    expected: pass
+  - id: Q04
+    check: responsive_360_768_1440
+    expected: pass
+  - id: Q05
+    check: keyboard_navigation
+    expected: pass
+  - id: Q06
+    check: github_pages_asset_paths
+    expected: pass
+  - id: Q07
+    check: no_unverified_business_claims
+    expected: pass
+  - id: Q08
+    check: lighthouse_categories
+    target_minimum: 90
+  - id: Q09
+    check: github_actions_deployment
+    expected: pass
+  - id: Q10
+    check: production_url_smoke_test
+    expected: pass
+
+execution_plan:
+  - order: 1
+    task: Audit existing repository and preserve user files
+  - order: 2
+    task: Scaffold Vite React without overwriting unrelated content
+  - order: 3
+    task: Configure GitHub Pages base path
+  - order: 4
+    task: Build navigation Hero services and primary contact CTA
+  - order: 5
+    task: Build About Process Safety Contact and Footer
+  - order: 6
+    task: Centralize editable content and placeholders
+  - order: 7
+    task: Add responsive accessibility SEO and performance handling
+  - order: 8
+    task: Run lint production build and local preview
+  - order: 9
+    task: Configure GitHub Actions Pages deployment
+  - order: 10
+    task: Push and verify production URL
+
+required_inputs_before_final_launch:
+  - legal_company_name_zh
+  - legal_company_name_en
+  - logo_and_brand_assets
+  - company_profile_and_founding_year
+  - service_area
+  - supported_equipment_brands_and_models
+  - cylinder_service_scope_and_limits
+  - valid_certifications_and_qualifications
+  - approved_project_photos_and_client_references
+  - contact_name_or_department
+  - telephone
+  - email
+  - address
+  - business_hours
+  - privacy_policy
+
+agent_constraints:
+  preserve_existing_git_history: true
+  preserve_unrelated_user_files: true
+  do_not_invent_company_facts: true
+  do_not_claim_unverified_certifications: true
+  do_not_publish_customer_identifiers_without_permission: true
+  do_not_commit_secrets: true
+  use_clear_placeholders_for_missing_content: true
+  stop_on_deployment_permission_failure: true

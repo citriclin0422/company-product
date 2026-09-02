@@ -64,6 +64,11 @@
 5. **Git 提交與推送 (Push to Remote)**：
    - 提交 `index.html`、`README.md`、`.preparation/` 相關資源。
    - 執行 `git push origin main` 成功推送到 GitHub 遠端儲存庫。
+6. **視覺品牌一致化更新 (Rainbow Bridge & Meteor Globe)**：
+   - 依據 `companycard_chinese.jpg` 中文名片樣式，將主視覺全面升級為「橘色彩虹橋 (Orange Rainbow Bridge)」風格。
+   - 精確重繪名片左上角「旋轉流星電路地球 (Rotating Meteor Circuit Globe)」向量 SVG Logo，並加入外軌微旋轉動畫。
+   - Favicon、Header 導覽列與 Footer 頁尾 Logo 同步更新。
+   - 再次執行 Git 提交並推送至 GitHub main 分支更新 GitHub Pages。
 
 ---
 

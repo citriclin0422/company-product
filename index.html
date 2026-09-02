@@ -17,8 +17,8 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://citriclin0422.github.io/company-product/">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230b1f33'/><circle cx='50' cy='50' r='38' fill='none' stroke='%23f59e0b' stroke-width='4'/><path d='M30 50h40M50 30v40M38 38l24 24M38 62l24-24' stroke='%2338bdf8' stroke-width='3'/><circle cx='50' cy='50' r='7' fill='%23f59e0b'/></svg>">
+  <!-- Favicon with Rotating Meteor Circuit Globe -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23FFFFFF'/><circle cx='50' cy='50' r='46' fill='%23F8FAFC' stroke='%23E2E8F0' stroke-width='1.5'/><path d='M36 14 C44 12 56 12 64 14' stroke='%23334155' stroke-width='3' stroke-linecap='round'/><circle cx='36' cy='14' r='3.2' fill='%23334155'/><path d='M22 22 C32 18 52 18 62 22' stroke='%23E05615' stroke-width='3.5' stroke-linecap='round'/><circle cx='22' cy='22' r='3.8' fill='%23E05615'/><path d='M38 31 C52 28 72 32 82 36' stroke='%232B394A' stroke-width='4' stroke-linecap='round'/><circle cx='82' cy='36' r='4.2' fill='%232B394A'/><path d='M14 42 C28 38 60 40 76 46' stroke='%23EA580C' stroke-width='4.2' stroke-linecap='round'/><circle cx='14' cy='42' r='4.5' fill='%23EA580C'/><path d='M26 55 C42 52 74 54 88 58' stroke='%231E293B' stroke-width='4.5' stroke-linecap='round'/><circle cx='88' cy='58' r='4.8' fill='%231E293B'/><path d='M16 68 C34 64 68 66 82 72' stroke='%23F97316' stroke-width='4' stroke-linecap='round'/><circle cx='16' cy='68' r='4.2' fill='%23F97316'/><path d='M28 80 C40 76 62 78 72 82' stroke='%23334155' stroke-width='3.5' stroke-linecap='round'/><circle cx='28' cy='80' r='3.8' fill='%23334155'/><path d='M40 90 C48 88 56 88 64 90' stroke='%23E05615' stroke-width='3' stroke-linecap='round'/><circle cx='40' cy='90' r='3' fill='%23E05615'/></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,26 +27,36 @@
 
   <style>
     /* ==========================================================================
-       CSS Variables & Design Tokens
+       CSS Variables & Design Tokens (Orange Rainbow Bridge & Industrial Tech)
        ========================================================================== */
     :root {
-      --bg-main: #07121E;
-      --bg-surface: #0B1F33;
-      --bg-card: rgba(15, 31, 51, 0.75);
-      --bg-card-hover: rgba(22, 45, 74, 0.85);
-      --bg-glass: rgba(11, 31, 51, 0.8);
+      --bg-main: #081018;
+      --bg-surface: #0E1B2A;
+      --bg-card: rgba(14, 27, 42, 0.78);
+      --bg-card-hover: rgba(24, 42, 64, 0.88);
+      --bg-glass: rgba(12, 23, 36, 0.82);
       
       --text-main: #F8FAFC;
-      --text-secondary: #94A3B8;
-      --text-muted: #64748B;
+      --text-secondary: #CBD5E1;
+      --text-muted: #94A3B8;
       
+      --rainbow-crimson: #7A1408;
+      --rainbow-brick: #BA380F;
+      --rainbow-orange: #EA580C;
+      --rainbow-amber: #F59E0B;
+      --rainbow-gold: #FCD34D;
+      --rainbow-glow: #FEF08A;
+
       --accent-blue: #38BDF8;
-      --tech-blue: #1677B8;
+      --tech-blue: #0284C7;
       --safety-orange: #F59E0B;
       --safety-orange-hover: #D97706;
-      --border-subtle: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(56, 189, 248, 0.3);
-      --border-orange: rgba(245, 158, 11, 0.4);
+      --brand-orange: #EA580C;
+      
+      --border-subtle: rgba(255, 255, 255, 0.1);
+      --border-accent: rgba(245, 158, 11, 0.35);
+      --border-orange: rgba(234, 88, 12, 0.45);
+      --border-blue: rgba(56, 189, 248, 0.3);
       
       --font-sans: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --font-en: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -56,9 +66,9 @@
       --radius-lg: 18px;
       --radius-full: 9999px;
       
-      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.35);
-      --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.15);
-      --shadow-orange-glow: 0 0 25px rgba(245, 158, 11, 0.2);
+      --shadow-subtle: 0 6px 24px rgba(0, 0, 0, 0.45);
+      --shadow-glow: 0 0 30px rgba(245, 158, 11, 0.25);
+      --shadow-orange-glow: 0 0 30px rgba(234, 88, 12, 0.3);
 
       --max-width: 1200px;
       --transition-base: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,10 +98,73 @@
       overflow-x: hidden;
       min-height: 100vh;
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(22, 119, 184, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
-        linear-gradient(to bottom, #07121E 0%, #0B1F33 50%, #07121E 100%);
+        radial-gradient(circle at 80% 12%, rgba(234, 88, 12, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 15% 45%, rgba(245, 158, 11, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(186, 56, 15, 0.14) 0%, transparent 45%),
+        linear-gradient(to bottom, #081018 0%, #0D1926 50%, #060B12 100%);
       background-attachment: fixed;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-base);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* ==========================================================================
+       Rainbow Bridge Hero & Global Background Layers
+       ========================================================================== */
+    .rainbow-bridge-hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .rainbow-bridge-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      object-fit: cover;
+      opacity: 0.95;
+    }
+
+    /* Section rainbow divider line */
+    .rainbow-divider {
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--rainbow-crimson) 15%, 
+        var(--rainbow-orange) 40%, 
+        var(--rainbow-amber) 55%, 
+        var(--rainbow-gold) 70%, 
+        transparent 100%);
+      opacity: 0.85;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
     }
 
     a {
@@ -231,9 +304,34 @@
     }
 
     .brand-logo-icon {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       flex-shrink: 0;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.4s ease;
+      filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.35));
+    }
+
+    .brand-logo:hover .brand-logo-icon {
+      transform: scale(1.08) rotate(6deg);
+      filter: drop-shadow(0 0 16px rgba(234, 88, 12, 0.65));
+    }
+
+    @keyframes globeOrbitSpin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .globe-orbit-spin {
+      transform-origin: 50px 50px;
+      animation: globeOrbitSpin 14s linear infinite;
+    }
+
+    .brand-logo:hover .globe-tracks {
+      filter: drop-shadow(0 0 2.5px rgba(234, 88, 12, 0.7));
     }
 
     .brand-text {
@@ -242,9 +340,9 @@
     }
 
     .brand-name-zh {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 800;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       color: #FFFFFF;
       line-height: 1.2;
     }
@@ -253,8 +351,8 @@
       font-family: var(--font-en);
       font-size: 0.65rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
-      color: var(--accent-blue);
+      letter-spacing: 0.09em;
+      color: var(--rainbow-amber);
       text-transform: uppercase;
     }
 
@@ -283,7 +381,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: var(--accent-blue);
+      background: linear-gradient(90deg, var(--rainbow-orange), var(--rainbow-amber));
       transition: var(--transition-base);
       border-radius: 2px;
     }
@@ -307,14 +405,14 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--safety-orange), var(--safety-orange-hover));
+      background: linear-gradient(135deg, var(--rainbow-orange), var(--safety-orange));
       color: #FFFFFF;
-      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+      box-shadow: 0 4px 16px rgba(234, 88, 12, 0.35);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+      box-shadow: 0 6px 22px rgba(234, 88, 12, 0.55);
     }
 
     .btn-secondary {
@@ -325,7 +423,7 @@
 
     .btn-secondary:hover {
       background: rgba(255, 255, 255, 0.1);
-      border-color: var(--accent-blue);
+      border-color: var(--rainbow-amber);
       color: #FFFFFF;
       transform: translateY(-2px);
     }
@@ -360,14 +458,15 @@
        Hero Section
        ========================================================================== */
     .hero-section {
-      padding: 110px 0 90px;
+      padding: 120px 0 100px;
       position: relative;
       overflow: hidden;
+      background: linear-gradient(180deg, rgba(122, 20, 8, 0.45) 0%, rgba(186, 56, 15, 0.25) 30%, rgba(8, 16, 24, 0.95) 85%);
     }
 
     .hero-content {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       max-width: 860px;
     }
 
@@ -1162,21 +1261,68 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="#home" class="brand-logo" aria-label="立赫精密 AXEQUATOR 首頁">
-        <!-- Reconstructed SVG Logo based on circuit globe business card -->
+        <!-- Exact Rotating Meteor Circuit Globe Logo from Business Card -->
         <svg class="brand-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="46" fill="#0B1F33" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-          <!-- Circuit Globe Lines -->
-          <path d="M18 40C26 30 38 24 50 24C65 24 78 32 84 44" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M14 52C18 64 30 76 50 76C68 76 80 64 86 52" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
-          <path d="M22 62C30 70 40 72 52 70C66 68 76 58 80 48" stroke="#1677B8" stroke-width="3" stroke-linecap="round"/>
-          <path d="M20 34C32 20 54 20 70 32" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
-          <!-- Circuit nodes / dots -->
-          <circle cx="18" cy="40" r="4.5" fill="#F59E0B"/>
-          <circle cx="84" cy="44" r="4.5" fill="#F59E0B"/>
-          <circle cx="50" cy="76" r="4.5" fill="#38BDF8"/>
-          <circle cx="34" cy="50" r="4" fill="#38BDF8"/>
-          <circle cx="66" cy="42" r="4" fill="#1677B8"/>
-          <circle cx="48" cy="38" r="4" fill="#F59E0B"/>
+          <defs>
+            <clipPath id="globe-clip-header">
+              <circle cx="50" cy="50" r="44" />
+            </clipPath>
+            <radialGradient id="globe-bg-header" cx="35%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="75%" stop-color="#F1F5F9" />
+              <stop offset="100%" stop-color="#E2E8F0" />
+            </radialGradient>
+            <linearGradient id="orbit-glow-header" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#EA580C" />
+              <stop offset="50%" stop-color="#F59E0B" />
+              <stop offset="100%" stop-color="#38BDF8" />
+            </linearGradient>
+          </defs>
+
+          <!-- Outer Meteor Orbiting Ring (Rotating) -->
+          <circle cx="50" cy="50" r="47" stroke="url(#orbit-glow-header)" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.75" class="globe-orbit-spin"/>
+          
+          <!-- Globe Sphere Base -->
+          <circle cx="50" cy="50" r="44" fill="url(#globe-bg-header)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+          <!-- Circuit / Meteor Stripes matching Business Card -->
+          <g clip-path="url(#globe-clip-header)" class="globe-tracks">
+            <!-- Row 1: Top Slate Track -->
+            <path d="M34 15 C44 12 56 12 66 15" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="34" cy="15" r="3" fill="#334155"/>
+
+            <!-- Row 2: Orange Track Left -->
+            <path d="M20 23 C32 18 52 19 64 23" stroke="#E05615" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="20" cy="23" r="3.6" fill="#E05615"/>
+            <circle cx="64" cy="23" r="2.8" fill="#334155"/>
+
+            <!-- Row 3: Slate Track Right -->
+            <path d="M36 32 C52 29 70 33 82 37" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="82" cy="37" r="4.2" fill="#1E293B"/>
+            <circle cx="36" cy="32" r="3.2" fill="#E05615"/>
+
+            <!-- Row 4: Orange Track Center-Left -->
+            <path d="M12 43 C26 39 58 41 76 47" stroke="#EA580C" stroke-width="4.2" stroke-linecap="round"/>
+            <circle cx="12" cy="43" r="4.4" fill="#EA580C"/>
+
+            <!-- Row 5: Deep Slate Track Equator -->
+            <path d="M24 56 C42 53 72 55 88 59" stroke="#0F172A" stroke-width="4.6" stroke-linecap="round"/>
+            <circle cx="88" cy="59" r="4.6" fill="#0F172A"/>
+            <circle cx="24" cy="56" r="3.5" fill="#EA580C"/>
+
+            <!-- Row 6: Orange Track Lower -->
+            <path d="M14 69 C32 65 66 67 82 73" stroke="#F97316" stroke-width="4.2" stroke-linecap="round"/>
+            <circle cx="14" cy="69" r="4.2" fill="#F97316"/>
+
+            <!-- Row 7: Slate Track Bottom-Left -->
+            <path d="M26 81 C38 77 60 79 72 83" stroke="#334155" stroke-width="3.5" stroke-linecap="round"/>
+            <circle cx="26" cy="81" r="3.6" fill="#334155"/>
+            <circle cx="72" cy="83" r="3" fill="#EA580C"/>
+
+            <!-- Row 8: Orange Base -->
+            <path d="M38 90 C46 88 54 88 62 90" stroke="#E05615" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="38" cy="90" r="3" fill="#E05615"/>
+          </g>
         </svg>
         <div class="brand-text">
           <span class="brand-name-zh">立赫精密</span>
@@ -1212,6 +1358,55 @@
   <main>
     <!-- 5.2 Hero Section -->
     <section class="hero-section" id="home">
+      <!-- Orange Rainbow Bridge Background Graphics (Matching Business Card) -->
+      <div class="rainbow-bridge-hero-bg" aria-hidden="true">
+        <svg class="rainbow-bridge-svg" viewBox="0 0 1440 460" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="rb-top-glow" x1="0%" y1="0%" x2="100%" y2="80%">
+              <stop offset="0%" stop-color="#7A1408" stop-opacity="0.85" />
+              <stop offset="50%" stop-color="#BA380F" stop-opacity="0.65" />
+              <stop offset="100%" stop-color="#EA580C" stop-opacity="0.3" />
+            </linearGradient>
+            <linearGradient id="rb-grad-ruby" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#651006" />
+              <stop offset="40%" stop-color="#8F1D0D" />
+              <stop offset="100%" stop-color="#BD330E" />
+            </linearGradient>
+            <linearGradient id="rb-grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#BA380F" />
+              <stop offset="45%" stop-color="#EA580C" />
+              <stop offset="100%" stop-color="#F97316" />
+            </linearGradient>
+            <linearGradient id="rb-grad-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D97706" />
+              <stop offset="50%" stop-color="#F59E0B" />
+              <stop offset="100%" stop-color="#FBBF24" />
+            </linearGradient>
+            <linearGradient id="rb-grad-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.95" />
+              <stop offset="50%" stop-color="#FEF08A" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#FFFBEB" stop-opacity="0.35" />
+            </linearGradient>
+          </defs>
+
+          <!-- Top Crimson-Orange Radiant Backdrop -->
+          <path d="M0,0 L1440,0 L1440,180 C1020,240 520,120 0,240 Z" fill="url(#rb-top-glow)" />
+
+          <!-- Multi-tier Rainbow Bridge Arcs -->
+          <!-- Band 1: Ruby Crimson Arc -->
+          <path d="M-50,260 C450,135 1000,250 1490,180" stroke="url(#rb-grad-ruby)" stroke-width="26" stroke-linecap="round" opacity="0.95"/>
+
+          <!-- Band 2: Vivid Orange Arc -->
+          <path d="M-50,278 C450,153 1000,268 1490,198" stroke="url(#rb-grad-orange)" stroke-width="20" stroke-linecap="round" opacity="0.98"/>
+
+          <!-- Band 3: Golden Amber Arc -->
+          <path d="M-50,293 C450,168 1000,283 1490,213" stroke="url(#rb-grad-amber)" stroke-width="16" stroke-linecap="round" opacity="0.95"/>
+
+          <!-- Band 4: Golden Sunlight Luminous Edge -->
+          <path d="M-50,305 C450,180 1000,295 1490,225" stroke="url(#rb-grad-glow)" stroke-width="8" stroke-linecap="round" opacity="0.85" filter="drop-shadow(0 0 10px rgba(254, 240, 138, 0.8))"/>
+        </svg>
+      </div>
+
       <div class="container">
         <div class="hero-content">
           <div class="hero-eyebrow">
@@ -1749,13 +1944,41 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand-logo">
-            <svg class="brand-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:36px; height:36px;">
-              <circle cx="50" cy="50" r="46" fill="#0B1F33" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-              <path d="M18 40C26 30 38 24 50 24C65 24 78 32 84 44" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
-              <path d="M14 52C18 64 30 76 50 76C68 76 80 64 86 52" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round"/>
-              <circle cx="18" cy="40" r="4.5" fill="#F59E0B"/>
-              <circle cx="84" cy="44" r="4.5" fill="#F59E0B"/>
-              <circle cx="50" cy="76" r="4.5" fill="#38BDF8"/>
+            <svg class="brand-logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:38px; height:38px;">
+              <defs>
+                <clipPath id="globe-clip-footer">
+                  <circle cx="50" cy="50" r="44" />
+                </clipPath>
+                <radialGradient id="globe-bg-footer" cx="35%" cy="30%" r="70%">
+                  <stop offset="0%" stop-color="#FFFFFF" />
+                  <stop offset="75%" stop-color="#F1F5F9" />
+                  <stop offset="100%" stop-color="#E2E8F0" />
+                </radialGradient>
+              </defs>
+              <circle cx="50" cy="50" r="47" stroke="url(#orbit-glow-header)" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.75" class="globe-orbit-spin"/>
+              <circle cx="50" cy="50" r="44" fill="url(#globe-bg-footer)" stroke="#CBD5E1" stroke-width="1.5"/>
+              <g clip-path="url(#globe-clip-footer)" class="globe-tracks">
+                <path d="M34 15 C44 12 56 12 66 15" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="34" cy="15" r="3" fill="#334155"/>
+                <path d="M20 23 C32 18 52 19 64 23" stroke="#E05615" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="20" cy="23" r="3.6" fill="#E05615"/>
+                <circle cx="64" cy="23" r="2.8" fill="#334155"/>
+                <path d="M36 32 C52 29 70 33 82 37" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="82" cy="37" r="4.2" fill="#1E293B"/>
+                <circle cx="36" cy="32" r="3.2" fill="#E05615"/>
+                <path d="M12 43 C26 39 58 41 76 47" stroke="#EA580C" stroke-width="4.2" stroke-linecap="round"/>
+                <circle cx="12" cy="43" r="4.4" fill="#EA580C"/>
+                <path d="M24 56 C42 53 72 55 88 59" stroke="#0F172A" stroke-width="4.6" stroke-linecap="round"/>
+                <circle cx="88" cy="59" r="4.6" fill="#0F172A"/>
+                <circle cx="24" cy="56" r="3.5" fill="#EA580C"/>
+                <path d="M14 69 C32 65 66 67 82 73" stroke="#F97316" stroke-width="4.2" stroke-linecap="round"/>
+                <circle cx="14" cy="69" r="4.2" fill="#F97316"/>
+                <path d="M26 81 C38 77 60 79 72 83" stroke="#334155" stroke-width="3.5" stroke-linecap="round"/>
+                <circle cx="26" cy="81" r="3.6" fill="#334155"/>
+                <circle cx="72" cy="83" r="3" fill="#EA580C"/>
+                <path d="M38 90 C46 88 54 88 62 90" stroke="#E05615" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="38" cy="90" r="3" fill="#E05615"/>
+              </g>
             </svg>
             <div class="brand-text">
               <span class="brand-name-zh" style="font-size:1.1rem;">立赫精密有限公司</span>
